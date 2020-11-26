@@ -7,3 +7,10 @@ header {
     background-color: #4b9c68;
     height: 80px;
 }
+
+header nav .menu {
+    list-style: none;  
+    margin: 0;
+    padding: 0;
+    display: none;
+}

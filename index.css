@@ -6,6 +6,7 @@ html, body {
 header {
     background-color: #4b9c68;
     height: 80px;
+    margin: 0;
 }
 
 header nav .menu {
@@ -22,6 +23,26 @@ header nav .menu {
     display: none;
 }
 
+/* ~ Sibling selector */
 #menu-on-off:checked ~ .menu {
     display: block;
+}
+
+.hamburger {
+    position: relative;
+    top: calc(55px / 2);
+    left: 20px;
+}
+
+.hamburger .dash {
+    background-color: #ffffff;
+    width: 30px;
+    height: 5px;
+    display: block;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    box-shadow: 3px 3px 18px 0px rgba(50, 50, 50, 0.2);}
+
+.hamburger .dash:last-child {
+    margin-bottom: 0;
 }

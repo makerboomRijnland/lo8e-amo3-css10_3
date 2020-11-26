@@ -41,8 +41,21 @@ header nav .menu {
     display: block;
     margin-bottom: 5px;
     border-radius: 2px;
-    box-shadow: 3px 3px 18px 0px rgba(50, 50, 50, 0.2);}
+    box-shadow: 3px 3px 18px 0px rgba(50, 50, 50, 0.2);
+}
 
 .hamburger .dash:last-child {
     margin-bottom: 0;
+}
+
+#menu-on-off:checked ~ .hamburger .dash.first {
+    transform: translateY(10px) rotate(45deg);
+}
+
+#menu-on-off:checked ~ .hamburger .dash.second {
+    display: none;
+}
+
+#menu-on-off:checked ~ .hamburger .dash.third {
+    transform: translateY(0) rotate(-45deg);
 }

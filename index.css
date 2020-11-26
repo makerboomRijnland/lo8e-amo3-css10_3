@@ -14,3 +14,7 @@ header nav .menu {
     padding: 0;
     display: none;
 }
+
+#menu-on-off:checked ~ .menu {
+    display: block;
+}
